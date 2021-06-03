@@ -1,4 +1,4 @@
-# Cloud Information Security Review Checklist
+# Google Cloud Information Security Review Checklist
 
 ## Governance, risk management, and compliance
 
@@ -43,13 +43,13 @@ What policy statements do you have in place to show your compliance with the abo
 
 ### Supply Management
 
-1. Who supplies your cloud infrastructure today?
+1. Is google cloud infrastructure in line with your compliance requirements?
 
-2. Is the underlying cloud providers infrastructure in line with your compliance requirements?
+2. Is there a multi-cloud architecture ? if yes , what other cloud provided services used ?
 
 3. Are the underlying VMs / load-balancers / storage sufficiently protected? (e.g., via firewalls)
 
-4. Is your application connected to any managed services? (e.g., database-as-a-service, logging-as-a-service, incident-management-as-a-service)
+4. Is your application connected to any google cloud managed services? (e.g., database-as-a-service, logging-as-a-service, incident-management-as-a-service)
 
 ### Separation of testing and production
 
@@ -81,7 +81,7 @@ What policy statements do you have in place to show your compliance with the abo
 
 ### Logging
 
-1. Do you forward nodes (journald), cloud platform and application logs to a tamper-proof logging environment?
+1. Do you forward nodes (journald), google cloud platform and application logs to a tamper-proof logging environment?
 
 2. What is your retention policy? What is the minimum amount of time you keep logging entries? What is the maximum amount of time you keep logging entries?
 
@@ -117,7 +117,7 @@ What policy statements do you have in place to show your compliance with the abo
 
 1. Do you scan containers for vulnerabilities before entering production?
 
-2. Do you have a process in place to get alerted when a container becomes vulnerable in production?
+2. Do you have a process in place to get alerted when a container/VM's becomes vulnerable in production?
 
 3. Do you enforce deployment only from known-good container image registries?
 
