@@ -53,7 +53,7 @@ What policy statements do you have in place to show your compliance with the abo
 
 ### Separation of testing and production
 
-1. Do you separate testing from production clusters?
+1. Do you separate testing from production google cloud clusters?
 
 2. Do you take production data into testing?
 
@@ -67,13 +67,13 @@ What policy statements do you have in place to show your compliance with the abo
 
 2. Is multi-factor authentication enabled?
 
-3. How many people have access to the production cluster?
+3. How many people have access to the google cloud production cluster?
 
     1. Is role based access implemented? (Read-only, Read-Write)
 
 4. Do you have one user account per person?
 
-5. Do you keep an audit trail on access to the production cluster?
+5. Do you keep an audit trail on access to the google cloud production cluster?
 
 6. Is the audit trail stored in a tamper-proof logging[^1] environment?
 
@@ -89,7 +89,7 @@ What policy statements do you have in place to show your compliance with the abo
 
 ### Backups
 
-1. Do you perform regular backups of your production clusters?
+1. Do you perform regular backups of your google cloud production clusters?
 
 2. Do you regularly test restoring from backups?
 
@@ -115,9 +115,9 @@ What policy statements do you have in place to show your compliance with the abo
 
 ### Technical Vulnerability Management
 
-1. Do you scan containers for vulnerabilities before entering production?
+1. Do you scan containers for vulnerabilities before entering google cloud production?
 
-2. Do you have a process in place to get alerted when a container/VM's becomes vulnerable in production?
+2. Do you have a process in place to get alerted when a container/VM's becomes vulnerable in google cloud production?
 
 3. Do you enforce deployment only from known-good container image registries?
 
@@ -143,9 +143,9 @@ What policy statements do you have in place to show your compliance with the abo
 
 ### Intrusion Detection / Prevention
 
-1. Do you have an intrusion detection system in the production cluster?
+1. Do you have an intrusion detection system in the google cloud production cluster?
 
-2. Do you have a web application firewall in front or within the production cluster?
+2. Do you have a web application firewall in front or within the google cloud production cluster?
 
 3. Do you alert on blocked outbound traffic?
 
@@ -165,7 +165,7 @@ What policy statements do you have in place to show your compliance with the abo
 
 3. Does your team have clear procedures for who handles incidents and how to handle incidents?
 
-4. Are there situations where you need to fix data in a production environment?
+4. Are there situations where you need to fix data in a google cloud production environment?
 
     1. If yes, what is your process?
 
@@ -191,7 +191,7 @@ What policy statements do you have in place to show your compliance with the abo
 
 1. How is a container image built?
 
-2. How is a container image deployed into the production cluster?
+2. How is a container image deployed into the google cloud production cluster?
 
 3. How do you manage deployments?
 
@@ -205,7 +205,7 @@ What policy statements do you have in place to show your compliance with the abo
 
 #### Access control
 
-1. How is access managed to this environment? (Role based, per user etc)
+1. How is access managed to this google cloud environment? (Role based, per user etc)
 
 2. Describe your source control systems and process
 
@@ -213,13 +213,13 @@ What policy statements do you have in place to show your compliance with the abo
 
 #### Access control
 
-1. How is access managed to this environment? (Role based, per user etc)
+1. How is access managed to this google cloud Test/QA environment? (Role based, per user etc)
 
 #### Test data
 
 1. How is test data created/sourced?
 
-2. Does data come from production data?
+2. Does data come from google cloud production data?
 
     1. If yes, is it anonymised?
 
@@ -227,7 +227,7 @@ What policy statements do you have in place to show your compliance with the abo
 
 #### Access control
 
-1. How is access managed to this environment? (Role based, per user etc)
+1. How is access managed to this google cloud production environment? (Role based, per user etc)
 
 ### Code/build Deployment
 
@@ -253,7 +253,7 @@ What policy statements do you have in place to show your compliance with the abo
 
 ### Health Checks
 
-1. Do you maintain KPIs for determining if your production cluster is working well? (e.g., USE: utilization, saturation, errors)
+1. Do you maintain KPIs for determining if your google cloud production cluster is working well? (e.g., USE: utilization, saturation, errors)
 
 2. Do you have relevant alerts in place?
 
