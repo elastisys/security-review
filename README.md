@@ -138,6 +138,11 @@ What policy statements do you have in place to show your compliance with the abo
 4. Is there any extra packages in container that can be security vulnerabilities ?
 5. Is your container running as a user ?
 
+### Case-2- Cloud Run Authentication 
+
+1. Do we have Identity provider access control in place ? Is it both for the user and other service ?
+2. Do we have the service account for cloud run service ? If so , what permissions are provided ?
+
 ### Use of Cryptography
 
 1. Do you encrypt traffic over open networks? Do you use HTTPS over the Internet?
