@@ -129,14 +129,6 @@ What policy statements do you have in place to show your compliance with the abo
 
 7. Are other adjacent services (e.g., container registry, logging environment, identity provider) updated, as required to avoid vulnerabilities?
 
-### Case-1- Cloud Run Container Security 
-
-1. What is the source of base image ? Is is signed one ? Do we have a lean base image 
-2. How vulnerabilities found at Non-OS level (Python, npm, ruby gems, etc)
-3. Is your container follows CIS benchmark ?
-4. Is there any extra packages in container that can be security vulnerabilities ?
-5. Is your container running as a user ?
-
 ### Use of Cryptography
 
 1. Do you encrypt traffic over open networks? Do you use HTTPS over the Internet?
