@@ -141,8 +141,11 @@ What policy statements do you have in place to show your compliance with the abo
 ### Case-2- Cloud Run Authentication 
 
 1. Do we have Identity provider access control in place ? Is it both for the user and other service ?
-2. Do we have the service account for cloud run service ? If so , what permissions are provided ?
-3. How access tokens used to authenticate when calling Google Cloud APIs ?
+3. Do we have the service account for cloud run service ? If so , what permissions are provided ?
+4. How access tokens used to authenticate when calling Google Cloud APIs ?
+5. How is the secrets manages in cloud run ? Is secret managed by secret manager ?
+6. Do we have customer managed encrytion keys ?
+7. Is cloud run integrated with Binarization autherization ? Or code is binarized and then deployed ?
 
 ### Use of Cryptography
 
