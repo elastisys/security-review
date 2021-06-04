@@ -142,6 +142,7 @@ What policy statements do you have in place to show your compliance with the abo
 
 1. Do we have Identity provider access control in place ? Is it both for the user and other service ?
 2. Do we have the service account for cloud run service ? If so , what permissions are provided ?
+3. How access tokens used to authenticate when calling Google Cloud APIs ?
 
 ### Use of Cryptography
 
