@@ -325,6 +325,12 @@ What policy statements do you have in place to show your compliance with the abo
 
 1. How do you verify that the security patches were deployed succesfully?
 
+## Billing
+
+1. Do you have a method in place to assign actual resourse/service usage costs to each project?
+1. Do you have billing alerts set at organization and/or project levels? Who is receiving these alerts? Is there a process in place how to deal with the alerts?
+1. Do you regularly review historical billing records and forcasts for future costs?
+
 <!-- Footnotes themselves at the bottom. -->
 ## Notes
 
