@@ -1,5 +1,9 @@
 # Cloud Information Security Review Checklist
 
+This document is a general, technology-neutral Cloud Information Security Review Checklist.
+
+In this repository you can also find technology specific checklists.
+
 ## Governance, risk management, and compliance
 
 1. What regulations / information security standards do you need to comply with?
