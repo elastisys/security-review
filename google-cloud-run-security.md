@@ -2,10 +2,10 @@
 
 ## Cloud Run Container Security
 
-1. What is the source of your base image? Is is a signed one? Do we have a lean base image?
+1. What is the source of your base image? Is is a signed one? Do you have a lean base image?
 1. How are vulnerabilities found at Non-OS level (Python, npm, ruby gems, etc.)?
-1. Deos your container follow CIS benchmark?
-1. Are there any extra packages in container that can be security vulnerabilities?
+1. Does your container follow CIS benchmark?
+1. Are there any extra packages in containers that can be security vulnerabilities?
 1. Are your containers running as a non-root user?
 
 ## Cloud Run Authentication
