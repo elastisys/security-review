@@ -130,22 +130,20 @@ What policy statements do you have in place to show your compliance with the abo
 7. Are other adjacent services (e.g., container registry, logging environment, identity provider) updated, as required to avoid vulnerabilities?
 
 
-### Case-1- Cloud Run Container Security 
+### Nomad Cluster Security 
 
-1. What is the source of base image ? Is is signed one ? Do we have a lean base image 
-2. How vulnerabilities found at Non-OS level (Python, npm, ruby gems, etc)
-3. Is your container follows CIS benchmark ?
-4. Is there any extra packages in container that can be security vulnerabilities ?
-5. Is your container running as a user ?
-
-### Case-2- Cloud Run Authentication 
-
-1. Do we have Identity provider access control in place ? Is it both for the user and other service ?
-3. Do we have the service account for cloud run service ? If so , what permissions are provided ?
-4. How access tokens used to authenticate when calling Google Cloud APIs ?
-5. How is the secrets manages in cloud run ? Is secret managed by secret manager ?
-6. Do we have customer managed encrytion keys ?
-7. Is cloud run integrated with Binarization autherization ? Or code is binarized and then deployed ?
+1. What is the noamd cluster size ?
+2. Is nomad - deployed single region or multi-region ? What is the deployment strategy ? How is the high availability and failover designed ? How is leader and      follower selected ?
+3. Is nomad integrated with consul ? How the DNS resolutions works to connect to the consul cluster ?
+4. How is nomad to consul connectivity ? Is it over HTTP secured with TLS ? And is there any consul token to encrypt the traffic ?
+5. Is the replication happens between the nomad cluster in different regions ?
+6. Does nomad cluster uses the ACL policies , Tokens and sentinal policies ?
+7. Do we have bootstrap nomad ACL systems ? it will make sure we have tokens , policies - rules and capabilities
+8. Are you using vault for secret management ? Is your vault has the version support ?
+9. How the services are isolated in Nomad cluster ?
+10. How the database connectivity works in nomad cluster ? How about the permission on persistent storage mounted ? 
+11. What startegy is used for mounting the data directory for statefulsets applications ?
+12. Is nomand supports auto-scaling  ? how the resources are defined in the nomad cluster ? or is that nomad itself defines the resource allocation for the job ?
 
 ### Use of Cryptography
 
