@@ -1,6 +1,6 @@
 # Nomad Cluster Security
 
-1. What is the noamd cluster size?
+1. What is the nomad cluster size?
 1. Is Nomad deployed single region or multi-region? What is the deployment strategy? How is the high availability and failover designed? How is leader and follower selected?
 1. Is Nomad integrated with consul? How the DNS resolutions works to connect to the consul cluster?
 1. How is Nomad to Consul connectivity? Is it over HTTP secured with TLS? And is there any consul token to encrypt the traffic?
