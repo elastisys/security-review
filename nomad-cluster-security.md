@@ -6,7 +6,7 @@
     -  How is the high availability and failover designed?
     -  In case of failover , how is the leader and follower selected?
     -  How does the brain-split strategy work ?
-4. Is Nomad integrated with consul? How the DNS resolutions works to connect to the consul cluster?
+4. Is Nomad integrated with consul? How does the DNS resolution work to connect to the consul cluster?
 5. How is Nomad to Consul connectivity? Is it over HTTP secured with TLS? And is there any consul token to encrypt the traffic?
 6. Is the replication happens between the Nomad cluster in different regions?
 7. Does Nomad cluster uses the ACL policies, Tokens and sentinal policies?
