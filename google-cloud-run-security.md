@@ -5,7 +5,7 @@
 1. What is the source of your base image?
 1. Is the Docker image signed one? Do you use Docker Content Trust (DCT) feature?
 1. How are vulnerabilities found at Non-OS level (Python, npm, ruby gems, etc.)?
-1. Does your container follow CIS benchmark?
+1. Does your container follow [CIS benchmark](https://github.com/docker/docker-bench-security)?
 1. Are there any extra packages in containers that can be security vulnerabilities?
 1. Are your containers running as a non-root user?
 
