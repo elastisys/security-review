@@ -2,12 +2,16 @@
 
 ## Cloud Run Container Security
 
-1. What is the source of your base image?
-1. Is the Docker image signed one? Do you use Docker Content Trust (DCT) feature?
-1. How are vulnerabilities found at Non-OS level (Python, npm, ruby gems, etc.)?
-1. Does your container follow [CIS benchmark](https://github.com/docker/docker-bench-security)?
-1. Are there any extra packages in containers that can be security vulnerabilities?
-1. Are your containers running as a non-root user?
+1.Container Base Image 
+   - What is the source of your base image? 
+   - Is the docker image signed one? Do you use Docker Content Trust feature ?
+   - Do you have a lean base image? 
+2. How are vulnerabilities found at Non-OS level (Python, npm, ruby gems, etc.)?
+3. Does your container follow [CIS benchmark](https://github.com/docker/docker-bench-security)?
+4. Are there any extra packages in containers that can be security vulnerabilities?
+5. Are containers running as a non-root user?
+6. How image ensures to avoid privilege escalation and how it deals with Linux capabilities.
+
 
 ## Cloud Run Authentication
 
