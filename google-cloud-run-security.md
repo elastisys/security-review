@@ -3,7 +3,7 @@
 ## Cloud Run Container Security
 
 1. What is the source of your base image?
-1. Is the Docker image signed one? Do you use Docker content trust feature?
+1. Is the Docker image signed one? Do you use Docker Content Trust (DCT) feature?
 1. How are vulnerabilities found at Non-OS level (Python, npm, ruby gems, etc.)?
 1. Does your container follow CIS benchmark?
 1. Are there any extra packages in containers that can be security vulnerabilities?
