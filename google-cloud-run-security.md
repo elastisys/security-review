@@ -2,7 +2,7 @@
 
 ## Cloud Run Container Security
 
-1.Container Base Image 
+1. Container Base Image 
    - What is the source of your base image? 
    - Is the docker image signed one? Do you use Docker Content Trust feature ?
    - Do you have a lean base image? 
