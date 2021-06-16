@@ -67,21 +67,15 @@ What policy statements do you have in place to show your compliance with the abo
 
 ### Access Control
 
+Consider access control to all components of your system: infrastructure, platforms, third party services or applications, as well as, your own application.
+
 1. Do you have a clear policy regarding who gets what access?
 
 1. Do you use an Identity Provider (IdP) and single sign-on (SSO)?
 
 1. Is multi-factor authentication mandatory?
 
-1. How many people have access to the production cluster?
-
-    1. Is role based access implemented? (Read-only, Read-Write)
-
 1. Do you have one user account per person?
-
-1. Do you keep an audit trail on access to the production cluster?
-
-1. Is the audit trail stored in a tamper-proof logging<sup>[1](#footnote1)</sup> environment?
 
 1. Do you regularly review access, e.g., revoking access to people leaving your organization?
 
@@ -211,7 +205,7 @@ What policy statements do you have in place to show your compliance with the abo
 
 #### Access control
 
-1. How is access managed to your development environment? (Role based, per user etc)
+1. How is access managed to your development environment? (Role based, per user, read-only, read-write, etc.)
 
 1. Which source code control system are you using?
 
@@ -221,7 +215,7 @@ What policy statements do you have in place to show your compliance with the abo
 
 #### Access control
 
-1. How is access managed to your testing/QA environment? (Role based, per user etc)
+1. How is access managed to your testing/QA environment? (Role based, per user, read-only, read-write, etc.)
 
 #### Test data
 
@@ -235,7 +229,13 @@ What policy statements do you have in place to show your compliance with the abo
 
 #### Access control
 
-1. How is access managed to this environment? (Role based, per user etc)
+1. How is access managed to this environment? (Role based, per user, read-only, read-write, etc.)
+
+1. How many people have access to the production cluster?
+
+1. Do you keep an audit trail on access to the production cluster?
+
+1. Is the audit trail stored in a tamper-proof logging<sup>[1](#footnote1)</sup> environment?
 
 ### Code/build Deployment
 
