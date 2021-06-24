@@ -3,16 +3,14 @@
 1. Are you storing your Terraform Code in a version control system (Git or similar)?
 1. Are you using one Terraform workspace for each environment of a given infrastructure component?
 1. Are you using Terraform modules to increase reusability of your infrastructure code?
-1. Terraform state :
-    1. How terraform state file is protected against accidental disclosure? 
-    1. How terraform state file is protected against corruption
+1. Terraform state:
+    1. Are your Terraform state files encrypted at rest?
+    1. How are your Terraform state files protected against accidental disclosure?
+    1. How are your Terraform state files protected against corruption?
 1. How do you handle sensitive information in your Terraform scripts?
     1. How are the credentials of a Terraform service account (JSON) secured?
     1. Where are these credentials stored?
     1. Is your Terraform integrated with a secret management tool (HashiCorp’s Vault or similar)?
-    1. Are your Terraform state files encrypted at rest?
-    1. How are your Terraform state files protected against accidental disclosure?
-    1. How are your Terraform state files protected against corruption?
 1. Are the permissions of a Terraform service account restricted to minimum?
     1. What is the list of permissions given to the Terraform service account?
     1. Are there any separate roles and policies attached?
