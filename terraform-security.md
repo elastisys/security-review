@@ -1,4 +1,4 @@
-# Terraform Security
+# Terraform Security Review Checklists
 
 1. Are you storing your Terraform Code in a version control system (Git or similar)?
 1. Is Terraform using a separate service account in your cloud infrastructure?

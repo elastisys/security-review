@@ -1,4 +1,4 @@
-# Nomad Cluster Security
+# Nomad Cluster Security Review Checklists
 
 1. What is the Nomad cluster size?
 1. Deployment Strategy
