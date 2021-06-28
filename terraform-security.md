@@ -11,7 +11,6 @@
     1. How are the credentials of a Terraform service account (JSON) secured?
     1. Where are these credentials stored?
     1. Is your Terraform integrated with a secret management tool (HashiCorp’s Vault or similar)?
-    1. Is your Terraform state file encrypted at rest?
 1. Are the permissions of a Terraform service account restricted to minimum?
     1. What is the list of permissions given to the Terraform service account?
     1. Are there any separate roles and policies attached?
