@@ -14,15 +14,16 @@ In this repository you can also find a general, technology-neutral Cloud Informa
     3. ☐ PCI-DSS
     4. ☐ ISO 27001
     5. ☐ HIPAA
-    6. ☐ Swedish HealthCare
+    6. ☐ Swedish HealthCare (Swedish: "Patientdatalagen")
     7. ☐ GDPR
-    8. Other
+    8. ☐ BSI IT baseline protection (German: "IT-Grundschutz")
+    9. Other
 
 
 2. Who/what role in your organisation is responsible for compliance?
 
 
-3. Does your organization have general information security policies outside of your compliance requirements in place? (e.g., “We need to store data in Brazil to appeal to national sentiments.”)
+3. Does your organization have general information security policies outside of your compliance requirements in place? (e.g., “We need to store data in Germany to appeal to national sentiments.”)
 
 
 ### Mapping of Standards to Policies
@@ -34,7 +35,7 @@ What policy statements do you have in place to show your compliance with the abo
 
 
 
-1. How do you track implementation? 
+1. How do you track implementation?
 
 
 2. What is your development/implementation methodology?
@@ -44,7 +45,7 @@ What policy statements do you have in place to show your compliance with the abo
 
 
 
-3. How do you track and plan implementation/development? 
+3. How do you track and plan implementation/development?
 
 
 ### Evidence of Implementation fulfilling Policies
@@ -143,8 +144,13 @@ What policy statements do you have in place to show your compliance with the abo
 
 1. Do you perform regular backups of your production Kubernetes clusters?
 
+2. How do you protect backups from loss or corruption?
 
-2. Do you regularly test restoring from backups?
+    1. Do you replicate backups to an off-site location?
+
+    2. Do you store backups in an immutable storage?
+
+3. Do you regularly test restoring from backups?
 
 
 ### Change Management
@@ -176,6 +182,10 @@ What policy statements do you have in place to show your compliance with the abo
 
 
 9. Do you do Canary deployments?
+
+10. Do you have a maintenance window for preventive maintenance?
+
+    1. Do you communicate the maintenance window to your users?
 
 
 ### Technical Vulnerability Management
@@ -289,6 +299,16 @@ What policy statements do you have in place to show your compliance with the abo
 2. Is there an escalation process in place if an incident is not responded to in time?
 
 
+3. Do you have a process in place to report incidents -- e.g., downtime, data breaches -- to your regulators or users, as required?
+
+
+### Capacity Management
+
+1. Do you have processes in place to predict running out-of-capacity, specifically with respect to CPUs, memory and storage?
+
+2. Do you have processes in place to add capacity to the cluster when needed?
+
+
 ## Kubernetes Cluster Security
 
 
@@ -299,10 +319,12 @@ What policy statements do you have in place to show your compliance with the abo
 2. Do you have RBAC enabled?
 
 
-3. Do you use PodSecurityPolicy?
+3. Do you use PodSecurityPolicy (to be deprecated) or Pod Security Standards?
 
 
 4. Do you use OpenPolicyAgent?
+
+5. Do your Kubernetes Nodes have appropriate [topology labels and taints](https://kubernetes.io/docs/reference/labels-annotations-taints/)?
 
 
 ## Kubernetes Workload Security
@@ -350,8 +372,9 @@ What policy statements do you have in place to show your compliance with the abo
 
 11. Do you have sufficient and tested NetworkPolicies in place?
 
+12. Do you use [Pod Topology Spread Constraints](https://kubernetes.io/docs/concepts/workloads/pods/pod-topology-spread-constraints/)?
 
-12. Did you run through other [Kubernetes Best Practices](https://learnk8s.io/production-best-practices)?
+13. Did you run through other [Kubernetes Best Practices](https://learnk8s.io/production-best-practices)?
 
 
 ## Kubernetes Development Practices
