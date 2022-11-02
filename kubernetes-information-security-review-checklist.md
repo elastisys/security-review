@@ -9,7 +9,7 @@ In this repository you can also find a general, technology-neutral Cloud Informa
 1. What regulations / information security standards do you need to comply with?
 
 
-    1. ☐ FFFS 2014:7
+    1. ☐ FFFS 2014:5
     2. ☐ SOC-2
     3. ☐ PCI-DSS
     4. ☐ ISO 27001
